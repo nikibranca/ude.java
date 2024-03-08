@@ -1,0 +1,265 @@
+public class Main {
+   public static void main(String[] args) {
+      // Print string
+      System.out.println("Hello World");
+      System.out.println("Que anda la banda del peluca");
+      // Print numbers
+      System.out.println(21 + 12321455);
+
+      /* Esto es un comentario
+         Multi linea
+         para comentario un bloque de codigo o para comentar y explicar en el codigo lo que vamos a hacer
+       */
+
+      // Varaibles
+      // type variableName = value;
+
+      // String
+      String name = "John";
+
+      // int numero entero
+      //int myNum = 15;
+
+      // nueva asignación a la variable
+
+      myNum = 2333;
+
+      //constants or final variables
+
+      final String myvar = "Esta no cambia";
+
+      // Other variables
+      /*
+      int myNum = 5;
+      float myFloatNum = 5.99f;
+      char myLetter = 'D';
+      boolean myBool = true;
+      String myText = "Hello";
+      */
+
+      String firstName = "John ";
+      String lastName = "Doe";
+      String fullName = firstName + lastName;
+      System.out.println(fullName);
+
+      int x = 5, y = 6, z = 50;
+      System.out.println(x + y + z);
+
+
+      // Data Types
+      int myNum = 5;               // Integer (whole number)
+      float myFloatNum = 5.99f;    // Floating point number
+      char myLetter = 'D';         // Character
+      boolean myBool = true;       // Boolean
+      String myText = "Hello";     // String
+
+
+
+
+      /*
+         Operators
+
+         +	Addition	      Adds together two values	               x + y
+         -	Subtraction	   Subtracts one value from another	         x - y
+         *	Multiplication	Multiplies two values	                  x * y
+         /	Division	      Divides one value by another	            x / y
+         %	Modulus	      Returns the division remainder	         x % y
+         ++	Increment	   Increases the value of a variable by 1	++x
+         --	Decrement	   Decreases the value of a variable by 1	--x
+
+         Assignment operators
+         Op    Example     Same as
+         =	   x = 5	      x = 5
+         +=	   x += 3	   x = x + 3
+         -=	   x -= 3	   x = x - 3
+         *=	   x *= 3	   x = x * 3
+         /=	   x /= 3	   x = x / 3
+         %=	   x %= 3	   x = x % 3
+         &=	   x &= 3	   x = x & 3
+         |=	   x |= 3	   x = x | 3
+         ^=	   x ^= 3	   x = x ^ 3
+         >>=	x >>= 3	   x = x >> 3
+         <<=	x <<= 3	   x = x << 3
+
+
+         Comparision Operators
+
+         Operator	Name	                     Example
+         ==	      Equal to	                  x == y
+         !=	      Not equal	               x != y
+         >	      Greater than	            x > y
+         <	      Less than	               x < y
+         >=	      Greater than or equal to	x >= y
+         <=    	Less than or equal to	   x <= y
+
+
+         Logical Operators
+         Operator	Name	         Description	                                                   Example
+         && 	   Logical and	   Returns true if both statements are true	                     x < 5 &&  x < 10
+         || 	   Logical or	   Returns true if one of the statements is true	               x < 5 || x < 4
+         !	      Logical not	   Reverse the result, returns false if the result is true	      !(x < 5 && x < 10)
+
+
+      Conditions
+      IF
+
+      Java has the following conditional statements:
+
+      Use if      to specify a block of code to be executed, if a specified condition is true
+      Use else    to specify a block of code to be executed, if the same condition is false
+      Use else if to specify a new condition to test, if the first condition is false
+      Use switch  to specify many alternative blocks of code to be executed
+
+
+      IF Syntax
+
+      if (condition) {
+        // block of code to be executed if the condition is true
+         }
+
+
+      IF else
+
+      int time = 20;
+      if (time < 18) {
+        System.out.println("Good day.");
+      } else {
+        System.out.println("Good evening.");
+      }
+      // Outputs "Good evening."
+
+      Else if
+      if (condition1) {
+        // block of code to be executed if condition1 is true
+      } else if (condition2) {
+        // block of code to be executed if the condition1 is false and condition2 is true
+      } else {
+        // block of code to be executed if the condition1 is false and condition2 is false
+      }
+
+
+
+      Switch
+      int day = 4;
+      switch (day) {
+        case 1:
+          System.out.println("Monday");
+          break;
+        case 2:
+          System.out.println("Tuesday");
+          break;
+        case 3:
+          System.out.println("Wednesday");
+          break;
+        case 4:
+          System.out.println("Thursday");
+          break;
+        case 5:
+          System.out.println("Friday");
+          break;
+        case 6:
+          System.out.println("Saturday");
+          break;
+        case 7:
+          System.out.println("Sunday");
+          break;
+      }
+
+
+      WHILE LOOP
+      The while loop loops through a block of code as long as a specified condition is true:
+
+
+      int i = 0;
+      while (i < 5) {
+        System.out.println(i);
+        i++;
+      }
+
+
+      DO / While
+
+      The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+      do {
+      // code block to be executed
+      }
+      while (condition);
+
+
+
+      For Loop
+      When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+
+      for (statement 1; statement 2; statement 3) {
+         // code block to be executed
+      }
+
+
+      Nested Loops
+      It is also possible to place a loop inside another loop. This is called a nested loop.
+
+      The "inner loop" will be executed one time for each iteration of the "outer loop":
+
+      // Outer loop
+      for (int i = 1; i <= 2; i++) {
+        System.out.println("Outer: " + i); // Executes 2 times
+
+        // Inner loop
+        for (int j = 1; j <= 3; j++) {
+          System.out.println(" Inner: " + j); // Executes 6 times (2 * 3)
+        }
+      }
+
+
+
+      FOR EACH LOOP
+
+      There is also a "for-each" loop, which is used exclusively to loop through elements in an array:
+
+
+      String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      for (String i : cars) {
+        System.out.println(i);
+      }
+
+
+      BREAK / Continue
+
+      Java Break
+      You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
+
+      The break statement can also be used to jump out of a loop.
+
+      for (int i = 0; i < 10; i++) {
+        if (i == 4) {
+          break;
+        }
+        System.out.println(i);
+      }
+
+
+      JAVA CONTINUE
+      The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+      for (int i = 0; i < 10; i++) {
+        if (i == 4) {
+          continue;
+        }
+        System.out.println(i);
+      }
+
+
+      */
+
+
+
+
+
+
+
+
+
+
+   }
+}
